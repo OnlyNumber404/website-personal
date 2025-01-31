@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: "Concert One",sans-serif;
+    background-color:#dfdfdf;
+
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.content {
+    flex: 2;
+}
+
+h2 {
+    color: lightslategray;
+    margin: 1rem 0 1rem 2rem;
+}
+
+.tema {
+    margin: 0 0 0 2.5rem;
+}
+
+.HU {
+    color:#684a3e;
+}
+
+.SKY {
+    color:#ac8456;
+}
+
+footer {
+    background-color:#a0847b;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #a0847b;
+    padding: 6px;
+    max-width: 100%;
+}
+
+nav ul {
+    display: flex;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+
+nav a:hover {
+    opacity: 80%;
+}
+
+nav li:hover {
+    border: solid #684a3e;
+    border-radius: 3px;
+    transition: 0.1s;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0 0 0 2rem;
+
+}
+
+img {
+    display: block;
+    margin: 0 0 1rem 1rem;
+    width: 100%;
+    max-width: 20rem;
+    box-shadow:  0 0 5px black;
+    border-radius: 2rem;
+}
+
+img:hover {
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.card {
+    display: flex;
+    width: 30rem;
+    max-width: 100%;
+    box-shadow:  0 0 3px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+
+}
+
+aside {
+    flex: 1;
+    font-size: large;
+    width:1rem;
+    max-width: 100%;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    padding: 5rem;
+    height: 100%;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.img-container img {
+    width: 10rem;
+}
+
+.text{
+    text-align: center;
+}
+
+.display table {
+    width: 100%;
+    border: solid;
+}
+
+.display table th {
+    width: 50%;
+    border: solid;
+    padding: 5px;
+}
+
+.display table td {
+    border: solid;
+    padding: 5px;
+}
+
+
+@media screen and (max-width:500px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px 0 ;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    
+    main {
+        display: block;
+    }
+
+
+    aside {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .img-container {
+        display: block;
+    }
+    
+    .text {
+        display: block;
+    }
+
+}
